@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
@@ -74,7 +73,7 @@ int main()
     if (seven_eleven % 7 != 0 && seven_eleven % 11 != 0) printf("Tu número no es múltiplo ni de 7 ni de 11");
     printf("\n\n");
 
-    printf("Ejercicio 6 -> Fin de o Entre semana");
+    printf("Ejercicio 6 -> Fin de o Entre semana\n");
     printf("Escribe la inicial de un día de la semana (l,m,M,j,v,s,d): ");
     scanf(" %c", &inicial_semana);
     switch (inicial_semana)
@@ -107,7 +106,7 @@ int main()
         case 6:
             printf("Puntuación -> D");
             break;
-        case 0 ... 5:
+        case 0 ... 5: // Rango entre 0 y 5, inclusivo de los extremos
             printf("Puntuación -> F");
             break;
         default: printf("Calificación Inválida!");
