@@ -20,7 +20,7 @@ int main()
     int sum_to_average = 0;
     int num_choice = 1;
     int num_amount = -1;
-    int average;
+    float average;
     int num_to_reverse;
     int rev_num;
     while (opcion_ejercicio != 5)
@@ -60,7 +60,7 @@ int main()
                     sum_to_average += num_choice;
                 }
                 average = sum_to_average / num_amount;
-                printf("Tu suma total es: %d. El promedio es: %d\n", sum_to_average, average);
+                printf("Tu suma total es: %d. El promedio es: %f\n", sum_to_average, average);
                 sum_to_average = 0;
                 num_choice = 0;
                 num_amount = -1;
