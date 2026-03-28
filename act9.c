@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int str_len(char str_1[])
 {
@@ -22,11 +21,10 @@ int str_comp(const char *s1, const char *s2)
     return (int)(unsigned char)(*s1) - (int)(unsigned char)(*s2);
 }
 
-
 int main()
 {
-    char word_1[16] = "Hola";
-    char word_2[16] = "Hola";
+    char word_1[16] = "Holas";
+    char word_2[16] = "Rolas";
     printf("Result: %s vs %s = %d\n",word_1, word_2, str_comp(word_1, word_2));
     printf("Length of word_1: %d\n", str_len(word_1));
     printf("Length of word_2: %d", str_len(word_2));
